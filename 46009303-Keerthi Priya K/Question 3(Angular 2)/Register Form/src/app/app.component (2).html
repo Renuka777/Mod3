@@ -1,0 +1,20 @@
+<html>
+ <head>
+ <title>my-registration-app</title>
+ </head>
+ <body>
+
+ <h1>Registration Form</h1>
+  <b>Username</b> <br>
+ <input type="text" name="user" [(ngModel)] = "user"/><br><br>
+ <b>Email</b> <br>
+ <input type="text" name="email" [(ngModel)] = "email"/><br><br>
+ <b>Password</b> <br>
+ <input type="text" name="pass" [(ngModel)] = "pass"/><br><br>
+ <span style="display:inline-block;font-size:16px;"> <input type="submit" name="btn1" (click) = "val()" value="Submit"/></span>
+<br><br><br>
+ 
+hello {{user}} !!! {{email}} {{pass}}
+ 
+ </body>
+</html>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm    
+   http://java.sun.com/xml/ns/persistence/orm_1_0.xsd"
+   version="1.0">
+      
+   <description> XML Mapping file</description>
+      
+   <entity class="model.Distance">        
+      <table name="Distance" />
+      <attributes>
+      
+         <id name="distance_id">
+            <generated-value strategy="TABLE"/>
+         </id>
+
+         <basic name="source">
+            <column name="COUNTRY_NAME" length="100"/>
+         </basic>
+         
+         <basic name="destination">
+         </basic>
+         
+         <basic name="dist_in_km">
+         </basic>
+         
+          <basic name="dist_in_miles">
+         </basic>
+         
+      </attributes>
+   </entity>
+   
+</entity-mappings>
